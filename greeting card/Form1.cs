@@ -45,7 +45,7 @@ namespace greeting_card
             g.FillEllipse(drawBrush, 400, 250, 6, 6);
             Thread.Sleep(300);
             g.FillEllipse(drawBrush, 409, 339, 12, 12);
-            Thread.Sleep(300);
+            Thread.Sleep(300);//
             g.FillEllipse(drawBrush, 551, 338, 10, 10);
             Thread.Sleep(300);
             g.FillEllipse(drawBrush, 589, 264, 11, 11);
