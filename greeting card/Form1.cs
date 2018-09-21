@@ -33,6 +33,7 @@ namespace greeting_card
 
             //Clear Background
             this.BackgroundImage = null;
+            Refresh();
             g.Clear(Color.Black);
            
             //Show Constellation
@@ -45,11 +46,10 @@ namespace greeting_card
             g.FillEllipse(drawBrush, 400, 250, 6, 6);
             Thread.Sleep(300);
             g.FillEllipse(drawBrush, 409, 339, 12, 12);
-            Thread.Sleep(300);//
+            Thread.Sleep(300);
             g.FillEllipse(drawBrush, 551, 338, 10, 10);
             Thread.Sleep(300);
             g.FillEllipse(drawBrush, 589, 264, 11, 11);
-            Refresh();
 
             //Constellation Name
             g.DrawString("The Big Dipper", titleFont, drawBrush, 275, 100);
