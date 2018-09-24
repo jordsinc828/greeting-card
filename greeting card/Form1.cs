@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
+/// <summary>
+/// 
+/// </summary>
 namespace greeting_card
 {
     public partial class Form1 : Form
@@ -32,7 +35,7 @@ namespace greeting_card
             Font descriptionFont = new Font("Times New Roman", 20, FontStyle.Bold);
             SolidBrush drawBrush = new SolidBrush(Color.White);
             Font nameFont = new Font("Arial", 10, FontStyle.Bold);
-            
+
 
             //Clear Background
             this.BackgroundImage = null;
@@ -70,17 +73,19 @@ namespace greeting_card
             //Constellation Description
             player2.Play();
             SolidBrush drawBrush3 = new SolidBrush(Color.Blue);
-            g.DrawString("The Big Dipper or the Plough is a large asterism\n " +
-                "consisting of seven bright stars of the constellation\n" +
-                " Ursa Major six of them are of second magnitude and \n" +
-                "one, Megrez, of third magnitude.\n" +
-                " Four define a bowl and three define a handle or head.\n" +
-                "It is recognized as a distinct grouping in many cultures.",
-                descriptionFont, drawBrush3, 5, 200);
-
-              }
-
-        private void Form1_Shown(object sender, EventArgs e)
+            g.DrawString("The Big Dipper or the Plough is a large asterism", descriptionFont, drawBrush3, 5, 225);
+            Thread.Sleep(200);
+            g.DrawString("consisting of seven bright stars of the constellation", descriptionFont, drawBrush3, 5, 245);
+            Thread.Sleep(200);
+            g.DrawString("Ursa Major six of them are of second magnitude and", descriptionFont, drawBrush3, 5, 265);
+            Thread.Sleep(200);
+            g.DrawString("one, Megrez, of third magnitude.", descriptionFont, drawBrush3, 5, 285);
+            Thread.Sleep(200);
+            g.DrawString("Four define a bowl and three define a handle or head.", descriptionFont, drawBrush3, 5, 305);
+            Thread.Sleep(200);
+            g.DrawString("It is recognized as a distinct grouping in many cultures.", descriptionFont, drawBrush3, 5, 325);
+        }
+            private void Form1_Shown(object sender, EventArgs e)
         {
             //Title Page
             Graphics g = this.CreateGraphics();
